@@ -2,6 +2,10 @@ package model;
 
 import java.time.LocalDate;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * @author Becca Deuser - rddeuser
  * CIS175 - Fall 2021
@@ -12,9 +16,11 @@ import java.time.LocalDate;
  * @author bdeus
  *
  */
-
+@Entity
 public class Movie {
 	//declare attributes
+	@Id
+	@GeneratedValue
 	private int id;
 	private String title;
 	private String genre;
