@@ -8,6 +8,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 /**
  * @author Austin Donald - ajdonald
@@ -15,6 +16,7 @@ import javax.persistence.OneToMany;
  * Oct 12, 2021
  */
 @Entity
+@Table(name="theater")
 public class Theater {
 	@Id
 	@GeneratedValue

@@ -24,5 +24,9 @@ public class Tester {
 		movieList.add(cats);
 		jordanCreek.setListOfMovies(movieList);
 		TH.insertTheater(jordanCreek);
+		List<Theater> allLists = TH.allTheaters();
+		for(Theater a: allLists) {
+			System.out.println(a.toString());
+		}
 	}
 }
