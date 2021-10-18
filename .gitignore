@@ -37,3 +37,4 @@ persistence.xml
 
 # jME (binaries)
 *.so
+/target/
